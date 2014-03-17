@@ -1,0 +1,111 @@
+body {margin:0 0 2em; padding:0; background:#376fc5 url(img/bg.png); color:#fff; font-size:100%; line-height:155%}
+body, input, textarea {font-family:"segoe ui", arial, helvetica, "liberation sans", sans-serif}
+
+h1 {position:relative; z-index:1; margin:0; padding:0.8em; background-image:linear-gradient(to top, #cf437f, #c4356c); box-shadow:inset 0px -1px 2px rgba(255, 255, 255, 0.2), 1px 3px 5px rgba(0, 0, 0, 0.4); font-size:150%; font-weight:normal; text-align:center}
+h1 span {position:relative; top:0.05em; right:-0.1em; font:normal 220%/80% "Allura", georgia, serif; word-spacing:0.05em}
+
+a {color:#fff; text-decoration:none}
+hr {clear:both; border:none}
+
+#wrapper {min-width:220px; max-width:780px; margin:0 auto 1.5em; padding:3.5em 1.5em 2em; background-color:#376fc5; border:1px solid rgba(255, 255, 255, 0.1); box-shadow:inset 1px 1px 3px rgba(0, 0, 0, 0.1); border-bottom-right-radius:20px; border-bottom-left-radius:20px}
+
+#footer {display:block; color:rgba(255, 255, 255, 0.6); font-size:95%; line-height:100%; text-align:center}
+#footer li {display:inline-block; padding:0 0.3em 0.2em 0.6em; border-left:1px solid rgba(255, 255, 255, 0.4)}
+#footer li:first-child {border:none}
+#footer a {color:rgba(255, 255, 255, 0.85)}
+#footer a:hover {color:#ff0}
+#footer span {padding:0 0.2em}
+
+/*Navigation*/
+
+nav {display:block; float:left; margin-top:-2.5em}
+nav a, #approveAll {display:inline-block; margin:0.2em 0 0.2em 0.4em; padding:0.2em 1em 0.25em; background-color:#43c4cf; box-shadow:inset 1px 1px 0px rgba(0, 0, 0, 0.1), inset -1px -1px 0px rgba(255, 255, 255, 0.25); white-space:nowrap}
+nav a:hover, #approveAll:hover {box-shadow:inset -1px -1px 0px rgba(0, 0, 0, 0.1), inset 1px 1px 0px rgba(255, 255, 255, 0.3)}
+#navAdd {background-color:#34c380}
+#navAdd::before {content:"+"; float:left; position:relative; top:-1px; left:-5px; font-size:180%; line-height:22px; font-weight:bold}
+#navLogout {background-color:#cf43c4}
+
+#approveAll {display:block; float:right; margin-top:-2.3em}
+
+/*Buttons*/
+
+.controls {display:table; position:relative; right:-0.5em; margin:-1em 0 0 auto; font-size:90%; line-height:100%}
+.controls a {display:inline-block; width:20px; height:20px; background:url(img/icons.png) no-repeat 2px 2px; color:#222}
+.controls .updateMessage {background-position:2px -30px}
+.controls .deleteMessage {background-position:2px -62px}
+.controls span {display:none; position:absolute; bottom:100%; right:0; padding:0.2em 0.5em 0.4em; background-color:#222; color:#fff}
+.controls a:hover span {display:block}
+
+/*Comments*/
+
+blockquote {margin:1em 1.2em 0; padding:0.9em 1.2em 0.2em; background-color:rgba(255, 255, 255, 0.95); color:#333}
+blockquote + blockquote {margin-bottom:0.5em}
+cite {font-weight:bold; font-style:normal}
+blockquote a {color:#376fc5}
+blockquote a:hover {color:#333}
+blockquote time {float:right; font-size:90%}
+blockquote div {border-top:1px solid #ccc}
+blockquote div[contenteditable="true"] {padding:0.5em 0.5em; background-color:#d9d5d7; border-color:#c3346c}
+blockquote div p:first-child {margin-top:0.5em}
+
+/*Pagination*/
+
+.pagination {clear:both; display:table; margin:1.5em auto 0; line-height:160%}
+.pagination li {display:inline}
+.pagination a, .pagination .active {display:block; float:left; height:28px; padding:1px 1.2em 0; background-color:rgba(255, 255, 255, 0.1); color:rgba(255, 255, 255, 0.8)}
+.pagination li:first-child, .pagination li:first-child a {border-top-left-radius:4px; border-bottom-left-radius:4px}
+.pagination li:last-child, .pagination li:last-child a {border-top-right-radius:4px; border-bottom-right-radius:4px}
+.pagination .active, .pagination a:hover {background-color:rgba(255, 255, 255, 0.25); color:#fff}
+.pagination .prev, .pagination .next, .pagination .first, .pagination .last {font-family:consolas, "courier new", monospace; line-height:26px}
+.pagination .first, .pagination .last {letter-spacing:-2px}
+
+/*Forms*/
+
+form {display:table; margin:0 auto; padding:0.5em 0.5em 1em; overflow:hidden}
+
+label {display:block; padding:0.5em 0; text-indent:-500em}
+
+input, textarea {box-sizing:border-box; -moz-box-sizing:border-box; font-size:100%}
+
+input:not([type="submit"]), textarea {float:left; min-width:300px; padding:0.2em; border:none}
+textarea {min-width:300px; width:100%; min-height:200px; margin-bottom:0.5em}
+input:focus, textarea:focus {box-shadow:inset 0px 0px 0px 1px #333}
+
+input[type="submit"] {display:block; position:relative; top:0.5em; padding:0.15em 0.4em; background-color:#c334b6; color:#fff; border:1px solid rgba(0, 0, 0, 0.4); box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0.7); font-size:100%}
+input[type="submit"]:focus, input[type="submit"]:active {background-color:#43cf4d}
+
+#recaptcha_widget_div {clear:both; margin-bottom:0.2em}
+#recaptcha_widget_div input {min-width:0; width:auto !important}
+
+form p {margin:0; padding:0.2em 0.3em; background-color:#ffd86f; color:#000}
+form p:first-of-type {border-top-right-radius:4px; border-top-left-radius:4px}
+form p:last-of-type {margin-bottom:1.5em; border-bottom-right-radius:4px; border-bottom-left-radius:4px}
+
+#bodyindex form {display:none; position:absolute; z-index:2; top:1em; left:50%; width:320px; margin:0 0 0 -190px; padding:30px; background-color:#376fc5}
+#bodyindex form input, #bodyindex form textarea {min-width:0; width:100% !important}
+#bodyindex form textarea {min-height:150px}
+#bodyindex form span {display:block; position:absolute; overflow:hidden; top:0.3em; right:0.2em; width:25px; height:25px; font-size:160%; line-height:80%; font-weight:bold}
+#bodyindex form span:hover {cursor:pointer; color:#000}
+
+/*Messages*/
+
+#flash {margin:0.5em 0 2em; padding:0.5em; background-color:rgba(0, 0, 0, 0.25); text-align:center}
+#flash p {margin:0.1em 0; padding-top:0; padding-bottom:0}
+
+#error, #success {display:none; position:fixed; z-index:3; top:40%; left:50%; width:380px; margin-left:-190px; padding:1.5em 1em; background-color:#c33436; font-size:120%; line-height:160%; font-weight:bold; text-align:center}
+#success {background-color:#34c380}
+
+.message {font-size:110%; text-align:center}
+
+/*Other*/
+
+nav a, .controls a, .controls span, .button, input, textarea, blockquote, #flash, #error, #success, #bodyindex form {border-radius:3px}
+#error, #success, #bodyindex form {box-shadow:0px 0px 8px 4px rgba(0, 0, 0, 0.2)}
+h1, nav a, #approveAll, table, .pagination, #error, #success {text-shadow:-1px -1px 1px rgba(0, 0, 0, 0.2)}
+
+@media (min-width:800px) and (min-height:700px) {
+	h1 {padding:0.8em 0.5em 1em; font-size:160%}
+	h1 span {font-size:265%}
+	textarea {min-width:400px; min-height:250px}
+	#bodyindex form {position:fixed; margin:50px 0 0 -210px; padding:40px 50px}
+}

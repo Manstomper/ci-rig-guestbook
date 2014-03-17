@@ -1,0 +1,25 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+$config = array(
+	'base_url' => base_url(),
+	'uri_segment' => 1,
+	'use_page_numbers' => true,
+	'full_tag_open' => '<ul class="pagination">',
+	'full_tag_close' => '</ul>',
+	'num_tag_open' => '<li>',
+	'num_tag_close' => '</li>',
+	'next_tag_open' => '<li class="next">',
+	'next_tag_close' => '</li>',
+	'prev_tag_open' => '<li class="prev">',
+	'prev_tag_close' => '</li>',
+	'first_tag_open' => '<li class="first">',
+	'first_tag_close' => '</li>',
+	'last_tag_open' => '<li class="last">',
+	'last_tag_close' => '</li>',
+	'cur_tag_open' => '<li class="active">',
+	'cur_tag_close' => '</li>',
+	'next_link' => '&gt;',
+	'prev_link' => '&lt;',
+	'last_link' => '&gt;&gt;',
+	'first_link' => '&lt;&lt;',
+);
